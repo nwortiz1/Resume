@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color: #f4f4f4;
+  height: auto;
+}
+
+/* Global */
+.container{
+  width: 80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul {
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left:20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.fade-in{
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+@-o-keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+@keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg);}
+	2% {-webkit-transform: rotate(-1deg);}
+	3.5% {-webkit-transform: rotate(1deg);}
+	5% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+
+#myBtn {
+  display: none; /*Start the button hiden*/
+  position: fixed;
+  bottom: 5vh;
+  right:4vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #582C83;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+#mybtn:hover {
+  background-color: #000000;
+}
+
+/* Header */
+header{
+  background:#000000;
+  color:#ffffff;
+  padding-top:20px;
+  padding-bottom:20px;
+  min-height:70px;
+  border-bottom:#582C83 3px solid;
+}
+
+.container-3{
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+header li{
+  display:inline;
+  padding: 0 10px 0 10px;
+}
+
+header #menu h1 {
+  margin:0;
+}
+
+header #menu .info {
+  margin:0;
+}
+
+header nav{
+  margin-top: 30px;
+}
+
+header .highlight, header .current a{
+  color:#582C83;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+
+/* Showcase */
+#showcase{
+  min-height:40vh;
+  background:
+  linear-gradient(
+      rgb(0, 0, 0,.7),
+      rgb(0, 0, 0,.7)
+    ),
+  url('../img/bkg3.jpg') no-repeat;
+  width:100%;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color:#ffffff;
+  display: flex;
+  flex: 0 1 50vw;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase h1{
+  margin-top:50px;
+  font-size:2.0rem;
+  margin-bottom:0px;
+}
+#showcase p {
+  font-weight:900;
+  font-size:1.3rem;
+}
+/* Styling 'Niagara University' in showcase */
+
+#NU {
+  color:#582C83;
+  text-shadow: 0px 0px 8px #ffffff;
+  font-size:2.3rem;
+}
+
+/* Boxes */
+
+.heading{
+  display:flex;
+  justify-content: center;
+}
+
+.container-1{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.boxes{
+  flex:1;
+  margin-top:0px;
+  font-size:1.0rem;
+}
+
+.boxes .box {
+  flex:1;
+  text-align: center;
+  width:80%;
+  padding:10px;
+  border:1px #ccc solid;
+}
+
+.boxes .position {
+  font-style:italic;
+  text-decoration: underline;
+  line-height: 0px;
+}
+
+.boxes .exp-date{
+  line-height:0px;
+}
+
+.box img {
+  height:100px;
+  width:100px;
+  padding-top:2vh;
+}
+
+#bottombox{
+  margin-bottom:4vh;
+}
+
+footer{
+  padding: 20px;
+  margin-top:0px;
+  color:#ffffff;
+  background-color: #582C83;
+  text-align: center;
+}
+
+/* Button */
+
+.container-4{
+  display:flex;
+  padding:20px 10px 20px 10px;
+  justify-content: center;
+  }
+
+.container-4 button {
+  border-radius:7px;
+  text-align:center;
+  border:none;
+  background-color: #582C83;
+  color: white;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight:bold;
+  padding: 1rem;
+  -webkit-animation: btnWiggle 4s infinite;
+  -moz-animation: btnWiggle 4s infinite;
+  -o-animation: btnWiggle 4s infinite;
+  animation: btnWiggle 4s infinite;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Skills and Volunteer */
+
+.container-2{
+  display:flex;
+  justify-content: center;
+  padding: 0 30px 0 30px;
+}
+
+.box-2{
+  line-height:1rem;
+}
+
+#skills{
+  background-color: #dadada;
+}
+
+#skills h2{
+  font-weight: bold;
+  text-align:center;
+}
+
+#skills p{
+  font-size:1.0rem;
+  text-align:center;
+}
+
+
+/* Changes for Mobile / Small Screens */
+@media only screen and (max-width: 680px){
+  #showcase h1{
+    margin-top:50px;
+    font-size: 1.5rem;
+    margin-bottom:10px;
+  }
+  #showcase p {
+    font-weight:900;
+    font-size:1.3rem;
+  }
+  #NU {
+    color:#582C83;
+    text-shadow: 0px 0px 8px #ffffff;
+    font-size:2.0rem;
+  }
+}
+
+
+@media only screen and (min-width:680px){
+  .container-1{
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  /* Get header to line up nicely */
+
+  .container-3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align:center;
+  }
+
+  #boxes{
+    margin-top:0px;
+    font-size:1.0rem;
+  }
+
+  #boxes .box {
+    flex:1;
+    text-align: center;
+    width:30%;
+    border:1px #ccc solid;
+  }
+
+  #boxes .position {
+    font-style:italic;
+    text-decoration: underline;
+    padding-top:0;
+    margin-top:0;
+  }
+
+  .container-3{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+
+  #bottombox{
+    margin-bottom:0vh;
+  }
+}
